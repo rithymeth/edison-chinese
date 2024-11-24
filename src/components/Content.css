@@ -4,10 +4,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
+  position: relative;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.particles-background {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .content-container {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1920px;
   display: flex;
@@ -37,7 +50,7 @@
 .cta-button {
   padding: 12px 24px;
   font-size: 1.1rem;
-  background-color: #007bff;
+  background-color: #ffb902;
   color: white;
   border: none;
   border-radius: 6px;
@@ -46,7 +59,7 @@
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #fc0100;
 }
 
 .content-right {
@@ -67,6 +80,61 @@
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animated-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  animation: fadeInUp 1s ease-out, glow 2s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.animated-title::before {
+  content: "Welcome to ICG GAMING";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffb902;
+  border-right: 2px solid #fc0100;
+  overflow: hidden;
+  animation: typing 4s steps(30) infinite;
+}
+
+@keyframes typing {
+  0%, 90%, 100% {
+    width: 0;
+  }
+  30%, 60% {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 968px) {

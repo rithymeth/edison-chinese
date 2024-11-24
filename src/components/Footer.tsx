@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer>
       <div className="footer-content">
-        <a href="https://t.me/icggame" className="telegram-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/c/2126586273/88" className="telegram-link" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-telegram"></i>
           Join us on Telegram
         </a>
