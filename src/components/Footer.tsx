@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     >
       <div className="footer-content">
         <motion.a 
-          href="https://t.me/c/2126586273/88" 
+          href="https://t.me/icggaming_edison" 
           className="telegram-link" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           whileTap={{ scale: 0.95 }}
         >
           <i className="fab fa-telegram"></i>
-          Join us on Telegram
+          加入我们的Telegram
         </motion.a>
         <motion.div 
           className="qr-code"

@@ -34,7 +34,7 @@ const Content: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Welcome to ICG GAMING
+            欢迎来到ICG GAMING
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -48,8 +48,8 @@ const Content: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <a href="https://t.me/c/2126586273/88" target="_blank" rel="noopener noreferrer">
-              <button className="cta-button">Get Started</button>
+            <a href="https://t.me/icggaming_edison" target="_blank" rel="noopener noreferrer">
+              <button className="cta-button">立即开始</button>
             </a>
           </motion.div>
         </motion.div>
