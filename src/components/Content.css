@@ -116,7 +116,7 @@
 }
 
 .animated-title::before {
-  content: "Welcome to ICG GAMING";
+  content: "欢迎来到ICG GAMING";
   position: absolute;
   top: 0;
   left: 0;
