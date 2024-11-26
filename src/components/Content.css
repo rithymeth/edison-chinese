@@ -96,6 +96,19 @@
   text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
+.animated-title::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffb902;
+  border-right: 2px solid #fc0100;
+  overflow: hidden;
+  animation: typing 4s steps(30) infinite;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -116,21 +129,8 @@
                  0 0 30px rgba(255, 255, 255, 0.3);
   }
   100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
   }
-}
-
-.animated-title::before {
-  content: "欢迎来到ICG GAMING";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #ffb902;
-  border-right: 2px solid #fc0100;
-  overflow: hidden;
-  animation: typing 4s steps(30) infinite;
 }
 
 @keyframes typing {
