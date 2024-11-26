@@ -50,8 +50,8 @@
 .cta-button {
   padding: 12px 24px;
   font-size: 1.1rem;
-  background-color: #ffb902;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -60,6 +60,7 @@
 
 .cta-button:hover {
   background-color: #fc0100;
+  color: rgb(255, 255, 255);
 }
 
 .content-right {
@@ -88,7 +89,7 @@
   margin-bottom: 20px;
   position: relative;
   animation: fadeInUp 1s ease-out, glow 2s ease-in-out infinite;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 @keyframes fadeInUp {
@@ -104,10 +105,10 @@
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
   }
   50% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+    text-shadow: 0 0 20px rgb(255, 255, 255),
                  0 0 30px rgba(255, 255, 255, 0.3);
   }
   100% {
@@ -135,6 +136,26 @@
   30%, 60% {
     width: 100%;
   }
+}
+
+.language-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
 
 @media screen and (max-width: 968px) {

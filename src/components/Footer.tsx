@@ -1,8 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { content } from './languageContent';
 import './Footer.css';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  language: 'en' | 'zh';
+}
+
+const Footer: React.FC<FooterProps> = ({ language }) => {
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -19,7 +24,7 @@ const Footer: React.FC = () => {
           whileTap={{ scale: 0.95 }}
         >
           <i className="fab fa-telegram"></i>
-          加入我们的Telegram
+          {content[language].footerText}
         </motion.a>
         <motion.div 
           className="qr-code"
