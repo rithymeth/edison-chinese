@@ -65,22 +65,26 @@
 
 .content-right {
   flex: 1;
-  max-width: 960px;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container {
   width: 100%;
   line-height: 0;
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .content img {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .animated-title {
